@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Title &amp; Positioning — Never One Winner, Always the Risk Beside It</title>
+<meta name="description" content="Generate title candidates before a book exists, or retitle one that isn't converting — plus the jacket copy. Proven four times across a real shelf.">
+<meta property="og:title" content="Title & Positioning">
+<meta property="og:description" content="Every candidate ships with its risk. A retitle workflow proven three times running. Not a theory of naming — a repeat of what already worked.">
+<meta property="og:image" content="https://nftyoginis.github.io/title-and-positioning-skill/og-image.png">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --paper: #faf7f2;
+    --ink: #201c1a;
+    --muted: #635a52;
+    --wine: #8a3b4a;
+    --surface: #f2e9df;
+    --border: #e4d8c8;
+    --gold: #b5731a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(250,247,242,0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(4px);
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+  .brand { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  .brand span { color: var(--wine); }
+  .navlinks { display: flex; gap: 24px; align-items: center; }
+  .navlinks a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  .navlinks a:hover { color: var(--wine); }
+  .btn {
+    display: inline-block; padding: 10px 20px; border-radius: 6px;
+    font-weight: 600; text-decoration: none; font-size: 0.95rem;
+    border: 1px solid transparent; cursor: pointer;
+  }
+  .btn-primary { background: var(--wine); color: #fff; }
+  .btn-primary:hover { background: #712f3b; }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--wine); color: var(--wine); }
+  header.hero { padding: 96px 0 72px; text-align: center; }
+  .kicker {
+    display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold);
+    border-radius: 20px; padding: 4px 14px; margin-bottom: 24px;
+  }
+  header.hero h1 { font-size: 2.6rem; line-height: 1.2; margin: 0 0 20px; max-width: 780px; margin-left: auto; margin-right: auto; }
+  header.hero p.sub { font-size: 1.2rem; color: var(--muted); max-width: 660px; margin: 0 auto 36px; }
+  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  section { padding: 64px 0; border-top: 1px solid var(--border); }
+  section h2 { font-size: 1.8rem; margin-bottom: 8px; }
+  section p.lead { color: var(--muted); max-width: 700px; margin-bottom: 40px; }
+  .pattern-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+  .pattern-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 28px; position: relative;
+  }
+  .pattern-card .tag {
+    display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--wine); margin-bottom: 10px;
+  }
+  .pattern-card h3 { margin: 0 0 10px; font-size: 1.15rem; }
+  .pattern-card p { color: var(--muted); font-size: 0.95rem; margin: 0 0 14px; }
+  .pattern-card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 0.9rem; }
+  .pattern-card li { margin-bottom: 4px; }
+  .gotcha {
+    background: #fff; border: 1px solid var(--wine); border-left: 4px solid var(--wine);
+    border-radius: 8px; padding: 24px 28px; margin-top: 32px;
+  }
+  .gotcha .tag { color: var(--wine); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .gotcha p { margin: 10px 0 0; color: var(--ink); }
+  .gotcha code { background: var(--surface); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+  .shelf-list { columns: 2; column-gap: 32px; margin: 16px 0 0; padding-left: 20px; color: var(--muted); font-size: 0.92rem; }
+  .shelf-list li { margin-bottom: 8px; break-inside: avoid; }
+  .shelf-note {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 20px 24px; margin-top: 24px; font-size: 0.95rem; color: var(--ink);
+  }
+  .shelf-note strong { color: var(--wine); }
+  ol.setup-steps { padding-left: 20px; }
+  ol.setup-steps li { margin-bottom: 14px; }
+  .faq-item { margin-bottom: 28px; }
+  .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  .faq-item p { color: var(--muted); margin: 0; }
+  .proof-block {
+    background: var(--surface); border: 1px dashed var(--border); border-radius: 10px;
+    padding: 40px; text-align: center; color: var(--muted);
+  }
+  footer { padding: 48px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--wine); text-decoration: none; }
+  @media (max-width: 640px) {
+    .navlinks { display: none; }
+    header.hero h1 { font-size: 2rem; }
+    .shelf-list { columns: 1; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Title&amp;<span>Positioning</span></a>
+    <div class="navlinks">
+      <a href="#patterns">The two jobs</a>
+      <a href="#shelf">The shelf check</a>
+      <a href="#jacket">Jacket copy</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#setup">Get started</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">Naming, not cover design</span>
+    <h1>Never one winning title. Always the safe pick, the bold swing, and the risk beside each one.</h1>
+    <p class="sub">Two coupled jobs: naming a book before it exists, and retitling one that's already out and not finding readers — plus the jacket copy that runs on the same thinking. Proven four times across a real shelf: two rounds on one book, and an identical retitle workflow on three others.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#patterns">See the two jobs</a>
+      <a class="btn btn-ghost" href="https://github.com/NFTYoginis/title-and-positioning-skill">View on GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="patterns">
+  <div class="wrap">
+    <h2>Two jobs. Different entry conditions, same discipline underneath.</h2>
+    <p class="lead">Which one applies depends entirely on whether the book already has a published title.</p>
+    <div class="pattern-grid">
+      <div class="pattern-card">
+        <span class="tag">No published title yet</span>
+        <h3>First-time development</h3>
+        <p>5 candidates a round, each with a why-it-works/risk pair, against a stated north star and the book's real constraints. A new round runs when the manuscript's actual thesis evolves — not just on request.</p>
+        <ul>
+          <li>Safe pick, bold commercial swing, dark horse — never one winner</li>
+          <li>Grounded in a real two-round trail, ten real candidates</li>
+          <li>Feeds the jacket-copy discipline and the shelf check</li>
+        </ul>
+      </div>
+      <div class="pattern-card">
+        <span class="tag">Already published, not converting</span>
+        <h3>Retitle-for-positioning</h3>
+        <p>The exact <code>_archive-old-title/</code> convention: old PDFs/PNGs archived, codenames and folder names untouched, only the displayed title text changes.</p>
+        <ul>
+          <li>Proven three separate times, no deviation</li>
+          <li>Starts from a diagnosed cause, not a guess</li>
+          <li>Same why-works/risk discipline applied to the retitle framing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gotcha">
+      <span class="tag">The refusal gate this skill runs on</span>
+      <p><strong>"I won't hand you a single 'winning' title — every candidate ships with what makes it work and what could go wrong, and the recommendation names a safe pick, a bold commercial swing, and a dark horse, not one verdict."</strong> The candidate that looks "obviously the strongest" is usually the boldest swing — and the boldest swing is, by construction, the most exposed.</p>
+    </div>
+  </div>
+</section>
+
+<section id="shelf">
+  <div class="wrap">
+    <h2>The comparable-title scan — formalized, not assumed</h2>
+    <p class="lead">The real trail flagged shelf-collision risk informally, in individual risk notes. This build ran the check for real, live, on the same category one of those notes named.</p>
+    <p style="color:var(--muted); font-size:0.9rem; margin-bottom:4px;">Real shelf data, fetched 2026-09-22 (Goodreads "fasting" shelf — Amazon's own list returned a 503 this session):</p>
+    <ol class="shelf-list">
+      <li><em>Autophagy: ...to Promote Longevity, Optimal Cellular Renewal, Detox, and Strength for a Happy Life</em></li>
+      <li><em>The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting</em></li>
+      <li><em>Fast Like a Girl: ...to Burn Fat, Boost Energy, and Balance Hormones</em></li>
+      <li><em>A Hunger for God</em></li>
+      <li><em>Fast, Feast, Repeat: The Comprehensive Guide to Delay, Don't Deny® Intermittent Fasting</em></li>
+      <li><em>The Obesity Code: Unlocking the Secrets of Weight Loss</em></li>
+      <li><em>Life in the Fasting Lane: ...Simple, Sustainable, and Enjoyable</em></li>
+      <li><em>Fasting Can Save Your Life</em></li>
+    </ol>
+    <div class="shelf-note">
+      <strong>Dominant pattern:</strong> outcome-promise-in-subtitle — burn fat, boost energy, unlock the secrets. <em>Are You Actually Hungry?</em> — a plainspoken question, no outcome-promise — is a genuine mismatch against this shelf. That confirms, with real data, what Round 1's own risk note predicted informally. The eventual subtitle doesn't chase the pattern either — a deliberate pattern-interrupt, not an accidental one. Naming that difference is exactly what this step exists for.
+    </div>
+  </div>
+</section>
+
+<section id="jacket">
+  <div class="wrap">
+    <h2>Jacket copy: dated, versioned, and checked against the book it's actually shipping on</h2>
+    <p class="lead">The same "describe it to a stranger in one breath" thinking that produces a title produces the back cover.</p>
+    <div class="gotcha">
+      <span class="tag">A real incident on this shelf</span>
+      <p>A publisher's comp once carried a different book's back-cover text verbatim — one title's copy, word for word, on another book's proof. It wasn't caught by assuming the comp was correct. It was caught by checking the returning proof character-for-character against the dated copy-of-record file. Every proof gets that same check now, not just the one that failed once.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proof">
+  <div class="wrap">
+    <h2>Titles shipped on this discipline</h2>
+    <div class="proof-block">
+      <!-- TODO: operator — add real before/after title pairs + links, once ready to name them publicly -->
+      Proof of shipped retitles and locked titles goes here — added by the operator, not invented.
+    </div>
+  </div>
+</section>
+
+<section id="setup">
+  <div class="wrap">
+    <h2>Setup</h2>
+    <ol class="setup-steps">
+      <li>Load this folder into a Claude Project, or point a Claude Code session at it — <code>SKILL.md</code> lets it auto-discover and trigger from a natural request.</li>
+      <li>Say which situation applies: no published title yet, or an already-published book that isn't converting.</li>
+      <li>Bring the manuscript's real thesis (not a pitch) for first-time development, or a stated reason for a retitle — the specialist refuses to guess at either.</li>
+      <li>Let it run the comparable-title scan before locking anything, and review the safe/bold/dark-horse recommendation rather than picking on hook alone.</li>
+      <li>Hand the locked title to your layout and cover skills — this one doesn't typeset or design.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>Will it just tell me the best title?</h3>
+      <p>No. Every candidate ships with its risk, and the recommendation names three real options, not one verdict — see the refusal gate above.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does it design the cover?</h3>
+      <p>No. It supplies the title and description text a cover has to carry — cover visual execution is a separate, deferred skill.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does it write the whole launch/funnel plan?</h3>
+      <p>No — that's Book Launch &amp; Funnel Strategy (not yet built). This one owns the title/description artifact, though it feeds that larger strategy.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I ask for a retitle without saying why it's not working?</h3>
+      <p>It asks what evidence that's based on before proposing anything — a retitle without a diagnosed cause risks solving the wrong problem.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    MIT License · <a href="https://github.com/NFTYoginis/title-and-positioning-skill">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
