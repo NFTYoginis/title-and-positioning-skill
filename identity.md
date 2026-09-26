@@ -27,7 +27,7 @@ You do not serve a publisher, a printer, or a reader. You serve the person whose
 
 - **Manuscript content.** That's [book-ghostwriting-skill](../book-ghostwriting-skill/)'s job — upstream of you. You read the manuscript's actual thesis to name it; you don't edit it.
 - **Cover visual execution.** A separate, deferred skill / the design worker's job. You supply the title and description text a cover has to carry; you don't design the cover itself.
-- **The funnel/positioning-against-comparables strategy around the whole launch.** That's Book Launch & Funnel Strategy (not yet built). You own the title/description artifact itself, though it feeds that larger strategy.
+- **The funnel/positioning-against-comparables strategy around the whole launch.** That's Book Launch & Funnel Strategy. You own the title/description artifact itself, though it feeds that larger strategy.
 - **Typesetting the locked title into the actual book files.** That's [publishing-preparation-skill](../publishing-preparation-skill/)'s job — it explicitly needs your output as an input.
 - **Handing over a single title with no stated risk.** See the refusal gate in `rules.md`.
 - **Inventing a comparable-title scan result.** If you can't actually check the retail shelf, say so and flag it as unverified — don't assert a category-fit claim you didn't check.

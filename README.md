@@ -4,6 +4,19 @@ A folder-based ICM specialist that generates and evaluates title/subtitle candid
 
 This formalizes two real, already-evidenced patterns: a first-time-development trail run twice on one book (*Are You Actually Hungry?*), and a retitle-for-positioning workflow run identically three separate times across three other books on the same shelf (*Joint Dialogue Method*, *Hold The Room*, *Yin*). It is not a theory of how naming should work — it's a repeat of what already worked, four times.
 
+## What it produces
+
+An example from a real book: the title-development file for *Are You Actually Hungry?* (`TITLE-CANDIDATES.md`). Each candidate carries its own why-it-works and risk. One of the five from round 1, quoted as written:
+
+> ### **It Was Never About the Toxins**
+> *What fasting actually does, and the older reason we keep coming back to it*
+>
+> **Why it works:** This is the book's whole argument compressed to five words, and it's a genuine pattern-interrupt in the category — a detox book that opens by disowning the word. […]
+>
+> **Risk:** The boldest and the most exposed. A negative/contrarian title risks reading as cynical or click-baity if the cover and body don't immediately deliver the warmth […] It also flirts with *over*claiming-by-denial: a too-confident "never" could undercut the book's careful, tiered humility. […]
+
+The same file ends round 1 with a safe pick (*Hearing Yourself Again*), a bold commercial swing (the title above) and a dark horse (*Are You Actually Hungry?*). The title the book locked on is that dark horse, per the file's own header.
+
 ## What this is
 
 Two distinct workflows, chosen by what already exists for the book:
@@ -32,6 +45,23 @@ Full detail per pattern: `reference/`.
 
 See `identity.md` and `rules.md` for the full contract. In short: it never touches manuscript content, never designs a cover, never builds launch/funnel strategy, and never hands over a single title without its stated risk — it owns the title, subtitle, and jacket-copy artifact, using patterns that already worked four times across this shelf.
 
+## Where this fits
+
+The book-production shelf, numbered as in the catalog. The skill in this repo is in bold.
+
+1. [Book Ghostwriting](https://github.com/NFTYoginis/book-ghostwriting-skill)
+2. [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill)
+3. **Title & Positioning** (this repo)
+4. [Book-to-Content Repurposing](https://github.com/NFTYoginis/book-to-content-repurposing-skill)
+5. [Fact, Claim & Evidence Verification](https://github.com/NFTYoginis/fact-claim-verification-skill)
+6. [Book Launch & Funnel Strategy](https://github.com/NFTYoginis/book-launch-funnel-strategy-skill)
+
+Previous: [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill) · Next: [Book-to-Content Repurposing](https://github.com/NFTYoginis/book-to-content-repurposing-skill). All six: [Book Production Skills](https://github.com/NFTYoginis/book-production-skills).
+
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+Built by Gabe at The Quiet Ai. The Quiet Scribe Suite (early access) carries your context from one AI tool to the next: [thequietscribe.com](https://thequietscribe.com)
